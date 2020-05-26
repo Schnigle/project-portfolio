@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project Breeze | Tomas Andersson</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/w3.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Tomas Andersson | Project portfolio</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="terrain-gen.html">Project TerrainGen</a></li>
+											<li><a href="action-rpg.html">Project Breeze</a></li>
+											<li><a href="platformer.html">Project Drifting Shores</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+				<!-- Main -->
+					<article id="main">
+						<header style="background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(images/action-rpg/banner-action-rpg.png);">
+							<h2>Breeze: 3D action game</h2>
+							<p>Personal project</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>Project description</h3>
+								<span class="image right"><img src="images/action-rpg/1.png" alt="" /></span>
+								<p>
+									Breeze is a 3D action game with a heavy focus on player interaction and combat. It is made with the Unity 3D game engine and the 3D assets are made using Blender. In this project I've done a second iteration on many of the systems that I implemented in <a href="platformer.html">Tepui</a> and extended the project to a 3D environment with more advanced graphics and interactive elements. The main features in this project include: 
+									<ul>
+										<li>Intuitive third-person 3D movement and camera interaction, with the ability to zoom into first-person view.</li>
+										<br>
+										<li>A flexible ability and combat system which allows actors to use special abilities such as attacks and spells limited by cast times, cooldowns and an energy resource. Actors can also be affected by temporary status effects such as slows, stuns or damage-over-time effects.</li>
+										<br>
+										<li>NPC agents that use the same mechanics as the player to interact with the world. Their behavior is driven by a hierarchical state machine combined with utility-based ability-selection during combat. </li>
+									</ul>
+								</p>
+								<p>
+									While it currently has fewer features than Tepui, my focus during this project has been to refine the player interaction and combat feedback, learn more about 3D graphics and better structure the underlying project architecture to better integrate with Unity. 
+								</p>
+								
+								<!-- Gallery and modal -->
+								<hr /><h3>Gallery</h3>
+								<div class="row gtr-50 gtr-uniform">
+									<div class="w3-container w3-quarter">
+										<span class="image fit">
+											<img src="images/action-rpg/3.png" onclick="onClick(this)" class="w3-hover-opacity gallerim">
+										</span>
+									</div>
+									<div class="w3-container w3-quarter">
+										<span class="image fit">
+											<img src="images/action-rpg/1.png" onclick="onClick(this)" class="w3-hover-opacity gallerim">
+										</span>
+									</div>
+									<div class="w3-container w3-quarter">
+										<span class="image fit">
+											<img src="images/action-rpg/2.png" onclick="onClick(this)" class="w3-hover-opacity gallerim">
+										</span>
+									</div>
+									<div class="w3-container w3-quarter">
+										<span class="image fit">
+											<img src="images/action-rpg/4.png" onclick="onClick(this)" class="w3-hover-opacity gallerim">
+										</span>
+									</div>
+									
+								  </div>
+								  
+								  <div id="modalContainer" class="w3-modal w3-animate-opacity" onclick="this.style.display='none'">
+									<div class="w3-modal-content w3-animate-zoom" style="vertical-align: middle; height: 100%; text-align: center;">
+									  <img id="modalImage" style="width:100%; max-height: 70%; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 15%; object-fit: contain;">
+									</div>
+								  </div>
+								  
+								  <script>
+								  function onClick(element) {
+									document.getElementById("modalImage").src = element.src;
+									document.getElementById("modalContainer").style.display = "block";
+								  }
+								  </script>
+								
+							</div>
+						</section>
+					</article>
+
+					<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/andersson-tomas/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Schnigle" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="mailto:tomas.e.andersson@hotmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>Tomas Andersson |  Project portfolio | Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+		
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
